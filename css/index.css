@@ -1,0 +1,66 @@
+/* 轮播图区域的样式处理 */
+.my-swiper-wrapper > *{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.my-swiper-wrapper{
+	border: 1px solid #000;
+	position: relative;
+	overflow: hidden;
+}
+.my-swiper-wrapper.my-swiper-fade .my-swiper-list{
+	position: relative;
+}
+.my-swiper-wrapper.my-swiper-fade .my-swiper-list .my-swiper-item{
+	position: absolute;
+	top: 0;
+}
+.my-swiper-wrapper .my-swiper-btn{
+	width: 25px;
+	height: 40px;
+	color: #fff;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.my-swiper-wrapper .my-swiper-btn.my-swiper-lbtn{
+	left: 0;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.my-swiper-wrapper .my-swiper-btn.my-swiper-rbtn{
+	right: 0;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.my-swiper-wrapper .my-swiper-spots{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+}
+.my-swiper-wrapper .my-swiper-spots span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-left: 5px;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.my-swiper-wrapper .my-swiper-spots span.active{
+	background-color: #f00;
+}
+.my-swiper-wrapper.my-swiper-animate .my-swiper-list{
+	position: absolute;
+}
+.my-swiper-wrapper.my-swiper-animate .my-swiper-list .my-swiper-item{
+	float : left;
+}
